@@ -220,7 +220,7 @@ int open_device(char* device_path) {
 	}
 
 	if (check_connection(fd)) {
-		list_infos(fd);
+		//list_infos(fd);
 		if (is_blackout(fd)) {
 			printf("Blackout is on.\n");
 			set_blackout(fd, false);
