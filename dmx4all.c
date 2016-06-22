@@ -167,6 +167,8 @@ bool set_blackout(int fd, bool value) {
 		perror(NULL);
 		return false;
 	}
+
+	return true;
 }
 
 bool is_blackout(int fd) {

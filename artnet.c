@@ -75,7 +75,7 @@ int artnet_output_handler(CONFIG* config, char* buf) {
 
 	if (art->length == 512) {
 		printf("Send to interface.\n");
-		send_dmx_512(config->device, art->data);
+		send_dmx_512(config->device, (char*) art->data);
 	}
 
 	return 0;

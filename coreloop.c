@@ -2,10 +2,6 @@ int art_node(CONFIG* config){
 	fd_set readfds;
 	struct timeval tv;
 	int maxfd, error;
-	unsigned i;
-
-	char* display_buffer = NULL;
-	char pressed_key;
 
 	while(!abort_signaled){
 
