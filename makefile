@@ -2,7 +2,7 @@ export PREFIX?=/usr
 export DOCDIR?=$(DESTDIR)$(PREFIX)/share/man/man1
 
 .PHONY: all clean
-CFLAGS?=-g
+CFLAGS?=-g -Wall
 LDLIBS?=-lm
 
 all: art-node art-node.1.gz
